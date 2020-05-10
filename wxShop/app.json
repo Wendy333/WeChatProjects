@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/index/index",  
+    "pages/category/category",
+    "pages/goods_list/goods_list",
+    "pages/goods_detail/goods_detail",
+    "pages/cart/cart",
+    "pages/collect/collect",
+    "pages/order/order",
+    "pages/search/search",
+    "pages/user/user",
+    "pages/feedback/feedback",
+    "pages/login/login",
+    "pages/auth/auth",
+    "pages/pay/pay"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b62e1f",
+    "navigationBarTitleText": "IdeaShop",
+    "navigationBarTextStyle": "white"
+  },
+   "tabBar": {
+     "color": "#8a8a8a",
+     "selectedColor": "#d81e06",
+     "backgroundColor": "#ffffff",
+     "position": "bottom",
+     "borderStyle": "black",
+     "list": [
+       {
+         "pagePath": "pages/index/index",
+         "text": "首页",
+         "iconPath": "icons/home1.png",
+         "selectedIconPath": "icons/home.png"
+       },
+       {
+        "pagePath": "pages/category/category",
+        "text": "分类",
+        "iconPath": "icons/fenlei1.png",
+        "selectedIconPath": "icons/fenlei.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "icons/cart1.png",
+        "selectedIconPath": "icons/cart.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "icons/mine1.png",
+        "selectedIconPath": "icons/mine.png"
+      }
+     ]
+   },
+   
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
