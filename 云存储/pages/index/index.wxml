@@ -1,0 +1,6 @@
+<button bindtap="uploadExcel" type="primary">上传excel文件</button>
+<button bindtap="openExcel" type="primary">下载并打开excel文件</button>
+<button bindtap="upload" type="primary">上传图片</button>
+<image src="{{imgUrl}}"></image>
+<button bindtap="uploadVideo" type="primary">上传视频</button>
+<video src="{{videoUrl}}"></video>
