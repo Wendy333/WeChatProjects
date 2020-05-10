@@ -1,0 +1,51 @@
+Page({
+add(){
+  wx.cloud.callFunction({
+    name:"add",
+    data:{
+      a:9,
+      b:3
+    },
+    success(res){
+      console.log("请求成功",res)
+    },
+    fail(res){
+      console.log("请求失败", res)
+    }
+  })
+},
+  getOpenId(){
+    wx.cloud.callFunction({
+      name:'getOpenId',
+      success(res){
+        console.log("获取openid成功",res.result.openid)
+      },
+      fail(res){
+        console.log("获取openid失败",res)
+      }
+    })
+  },
+  // 数据库api获取数据
+  dataApi(){
+    wx.cloud.database().collection("users").get({
+      success(res){
+        console.log("数据库获取成功",res)
+      },
+      fail(res){
+        console.log("数据库获取失败",res)
+      }
+    })
+  },
+  //云函数获取数据
+  cloudData(){
+    wx.cloud.callFunction({
+      name:"getData",
+      success(res){
+        console.log("云函数获取数据成功",res)
+      },
+      fail(res){
+        console.log("云函数获取数据失败",res)
+      }
+    })
+  }
+})
