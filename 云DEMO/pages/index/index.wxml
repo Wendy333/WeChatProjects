@@ -1,0 +1,4 @@
+<button bindtap="add" type="primary">云函数获取加法</button>
+<button bindtap="getOpenId" type="primary">获取用户openid</button>
+<button bindtap="dataApi" type="primary">数据库API获取数据</button>
+<button bindtap="cloudData" type="primary">云函数获取数据</button>
